@@ -1,6 +1,14 @@
 # analyzing and graphing sankey of fuel changes
 # from base to postDIST
 
+# Third in a series. 
+# First script created a combined baseline-DIST{} raster so 
+#  we can get PER PIXEL fuel changes. 
+# Second script extract summaries - pixel counts of each combination of change
+#  within California state boundaries. 
+# This script will graph and create visualizations. 
+
+
 ### Library ---------------------------------------------
 if (!require("pacman")) install.packages("pacman")
 

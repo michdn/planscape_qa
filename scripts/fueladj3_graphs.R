@@ -1,8 +1,16 @@
 #fuel adjective graphs
 
-# 1. means, all 
+# 1. means 
 
-# 2. diff from baseline, individual
+# 2. diff in individual adj categories from baseline
+
+# Third in a series. 
+# First script turns the original prebake raster into fuel adjective rasters
+# Second script will extract statistics - pixel counts of EACH category, 
+#  mean of adjective value. 
+# This script will graph/visualize, and is based on the 
+#  geotiff-wide (complete bounding box around extent of CA) results. 
+
 
 ### Library ---------------------------------------------
 if (!require("pacman")) install.packages("pacman")

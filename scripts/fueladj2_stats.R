@@ -1,5 +1,13 @@
 # Get summary stats on adjective results
 
+# Second in a series. 
+# First script turns the original prebake raster into fuel adjective rasters
+# This script will extract statistics - pixel counts of EACH category, 
+#  mean of adjective value. 
+# This script is geotiff-wide (complete bounding box around extent of CA)
+# and the third will graph/visualize. 
+
+
 ### Library ---------------------------------------------
 if (!require("pacman")) install.packages("pacman")
 

@@ -1,4 +1,14 @@
-# Get summary stats on adjective results
+# Get summary stats on adjective results, California state boundary
+
+# Alternative second script in a series. 
+# First script turns the original prebake raster into fuel adjective rasters
+# This script will extract statistics - pixel counts of EACH category, 
+#  mean of adjective value. 
+# This script is extracting the state of CA (not geotiff-wide).
+# and the third will graph/visualize (based on geotiff-wide). 
+
+# NOTE: This script was not ultimately used. 
+
 
 ### Library ---------------------------------------------
 if (!require("pacman")) install.packages("pacman")

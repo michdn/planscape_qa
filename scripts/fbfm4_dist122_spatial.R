@@ -1,6 +1,16 @@
 # DIST 122 example
 # highlight spatial WHERE NBtB changes are happening
 
+# Fourth in a series. 
+# First script created a combined baseline-DIST{} raster so 
+#  we can get PER PIXEL fuel changes. 
+# Second script extract summaries - pixel counts of each combination of change
+#  within California state boundaries. 
+# Third script graphed and create visualizations. 
+# This script collapses input and postDIST to binary burn/non-burnable flags
+#  to visualize WHERE the non-burn fuel model to BURNABLE fuel model values
+#  were occuring. Only for DIST122 example, but could be adapted for others. 
+
 ### Library ---------------------------------------------
 if (!require("pacman")) install.packages("pacman")
 

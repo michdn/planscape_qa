@@ -1,5 +1,9 @@
 # Turn all nonforest prebakes into fuel adjective values
 
+# First in a series. 
+# This script turns the original prebake raster into fuel adjective rasters
+# Second script will extract statistics, and third will graph/visualize. 
+
 ### Library ---------------------------------------------
 if (!require("pacman")) install.packages("pacman")
 
@@ -101,6 +105,23 @@ if (adj_to_use == "FL"){
     as.matrix
 }
 
+# # special, both FL and ROS final crosswalk
+# #  could use this instead in the future
+# fl_adj_codes <- tibble(FL = c("VL", "L", "M", "H", "VH", "X"),
+#                     FL_adj_code = 2:7)
+# ros_adj_codes <- tibble(ROS = c("VL", "L", "M", "H", "VH", "X"),
+#                     ROS_adj_code = 2:7)
+# #ROS then FL
+# adj_full <- adj %>% 
+#   left_join(ros_adj_codes, by = join_by("ROS")) %>% 
+#   left_join(fl_adj_codes, by = join_by("FL")) %>% 
+#   bind_rows(tibble(FBFM = c(91, 92, 93, 98, 99),
+#                    ROS = rep("NB", 5),
+#                    FL = rep("NB", 5),
+#                    ROS_adj_code = rep(1, 5),
+#                    FL_adj_code = rep(1, 5))) %>% 
+#   arrange(FBFM)
+# write_csv(adj_full, "data_qa/fbfm_adjective_full_crosswalk.csv")
 
 ### Reclass setup --------------------------------
 

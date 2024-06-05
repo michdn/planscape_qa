@@ -1,5 +1,10 @@
 # overlay each DIST on baseline and get per pixel fbfm40 changes
 
+# First in a series. 
+# This script creates a combined baseline-DIST{} raster so 
+#  we can get PER PIXEL fuel changes. 
+# Second script will extract summaries/stats, and third will graph. 
+
 ### Library ---------------------------------------------
 if (!require("pacman")) install.packages("pacman")
 

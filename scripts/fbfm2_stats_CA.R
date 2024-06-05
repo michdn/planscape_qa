@@ -1,4 +1,12 @@
-# Get summary stats on adjective results
+# Get summary stats on baseline-to-DIST fuel model rasters
+
+# Second in a series. 
+# First script created a combined baseline-DIST{} raster so 
+#  we can get PER PIXEL fuel changes. 
+# This script extract summaries - pixel counts of each combination of change
+#  within California state boundaries. 
+# Third script will graph. 
+
 
 ### Library ---------------------------------------------
 if (!require("pacman")) install.packages("pacman")

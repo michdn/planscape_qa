@@ -1,4 +1,14 @@
+# Script for comparing the unaltered FFv3 (PRE-operational) FBFM40 layer 
+#  with the final FFv3 OPERATIONAL FBFM40 layer
+#  The operational version has two changes:
+#  1. Special codes for WUI areas
+#  2. Non-burnable flip. Flip FFv3 burnable pixels with whatever their value
+#     was in FFv2 layer. LF 2.3.0 was heavy on the non-burnable status, per
+#     FF team members. 
 
+# Not directly relevant to Planscape nonforest prebakes, 
+# but just some exploration why it is better to use 
+# the altered FFv3 non-burn flip version. 
 
 ### Library ---------------------------------------------
 if (!require("pacman")) install.packages("pacman")
@@ -9,6 +19,7 @@ pacman::p_load(
   sf,
   ggalluvial)
 
+#prevent scientific notation
 options(scipen = 999)
 
 ### Data ----------------------------------------------
